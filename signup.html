@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    
+<title>Sign up form</title>
+<link rel="stylesheet" href="assets/css/style1.css">
+<body style="background-color:black;">
+<div class="login-box">
+<h1><center> SIGN-UP </center></h1>
+<main>
+	   <form action="getstarted.html">
+	       <div  class="textbox">
+	       <label for="userId"> User ID</label><br>
+		   <input type="text" name="userId"  id="userId"><br></div>
+		   <div  class="textbox">
+		   <label for="firstName"> First Name</label><br>
+		   <input type="text" name="firstName" id="firstName"><br></div>
+		   <div  class="textbox">
+		   <label for="lastName"> Last Name</label><br>
+		   <input type="text" name="lastName" id="lastName"><br></div>
+		   <div  class="textbox">
+		   <label for="email">emailId</label><br>
+		   <input type="email" name="email" id="email"  required /><br></div>
+		   <div  class="textbox">
+		   <label for="password">password</label><br>
+		   <input type="password" name="password"  id="password" required /><br></div>
+		   <button id="button" class="btn" >Submit</button><br>
+		</form>
+	</main>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAaxQiwHCu7KbVAFBW3AHohptXVh0naozU",
+    authDomain: "e-book-2402f.firebaseapp.com",
+    databaseURL: "https://e-book-2402f-default-rtdb.firebaseio.com",
+    projectId: "e-book-2402f",
+    storageBucket: "e-book-2402f.appspot.com",
+    messagingSenderId: "705051182419",
+    appId: "1:705051182419:web:4879b51bbf59648078cda6",
+    measurementId: "G-4XMX5XMXKY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="s.js"></script>
+</body>
+</html>
